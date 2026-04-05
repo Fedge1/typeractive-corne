@@ -9,6 +9,25 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        DTapQuestion: DTapQuestion {
+            compatible = "zmk,behavior-tap-dance";
+            label = "W-?";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp QUESTION>;
+        };
+
+        longPress: longPress {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONGPRESS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,10 +40,10 @@
 
             display-name = "Base";
             bindings = <
-&none  &kp F  &kp D  &kp L             &kp W  &kp J        &kp COLON  &kp B        &kp U     &kp O      &kp SLASH   &none
-&none  &kp S  &kp T  &kp H             &kp C  &kp Y        &kp Q      &kp N        &kp A     &kp E      &kp I       &none
-&none  &kp X  &kp K  &kp M             &kp G  &kp V        &kp Z      &kp P        &kp SQT   &kp COMMA  &kp PERIOD  &none
-                     &kp LEFT_CONTROL  &kp R  &lt 1 RET    &kp SPACE  &lt 2 SPACE  &kp RALT
+&none  &kp F  &kp D  &kp L             &DTapQuestion  &kp J        &kp COLON  &kp B        &kp U     &kp O      &kp SLASH   &none
+&none  &kp S  &kp T  &kp H             &kp C          &kp Y        &kp Q      &kp N        &kp A     &kp E      &kp I       &none
+&none  &kp X  &kp K  &kp M             &kp G          &kp V        &kp Z      &kp P        &kp SQT   &kp COMMA  &kp PERIOD  &none
+                     &kp LEFT_CONTROL  &kp R          &lt 1 RET    &kp SPACE  &lt 2 SPACE  &kp RALT
             >;
         };
 
@@ -37,10 +56,10 @@
 
             display-name = "extra";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &bt BT_CLR    &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&none  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6                           &kp N7                      &kp N8                       &kp N9                    &kp N0  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT                         &longPress DOLLAR NUMBER_4  &longPress PERCENT N5        &kp RIGHT                 &trans  &none
+&none  &bt BT_CLR    &trans        &trans        &trans        &trans          &trans                           &longPress EXCLAMATION N1   &longPress AT_SIGN NUMBER_2  &longPress HASH NUMBER_3  &trans  &none
+                                   &kp LGUI      &trans        &trans          &longPress RIGHT_PARENTHESIS N0  &kp SPACE                   &kp RALT
             >;
         };
 
