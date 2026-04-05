@@ -89,7 +89,7 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            display-name = "Base";
+            display-name = "Racket";
             bindings = <
 &none  &kp F            &kp D                   &kp L             &DTapQuestion  &kp J        &longPress SEMICOLON COLON  &kp B        &kp U         &kp O                    &kp SLASH        &none
 &none  &hrL LEFT_ALT S  &hrShiftL LEFT_SHIFT T  &hrL LCTRL H      &kp C          &kp Y        &kp Q                       &kp N        &hrR RCTRL A  &hrShiftR RIGHT_SHIFT E  &hrR LEFT_ALT I  &none
