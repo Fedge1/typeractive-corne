@@ -141,10 +141,10 @@
 
             display-name = "Fkeys";
             bindings = <
-&trans  &bt BT_CLR  &bt BT_PRV      &bt BT_NXT      &trans           &trans    &trans  &kp PAGE_DOWN      &kp UP_ARROW     &kp PG_UP   &none   &trans
-&trans  &trans      &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans    &trans  &kp LEFT           &kp DOWN         &kp RIGHT   &none   &trans
-&trans  &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans  &trans
-                                    &kp LGUI        &trans           &trans    &trans  &trans             &lt 3 ESCAPE
+&trans  &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 2    &bt BT_PRV       &bt BT_NXT    &trans  &kp PAGE_DOWN      &kp UP_ARROW     &kp PG_UP   &none   &trans
+&trans  &trans      &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans        &trans  &kp LEFT           &kp DOWN         &kp RIGHT   &none   &trans
+&trans  &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans  &trans
+                                    &kp LGUI        &trans           &trans        &trans  &trans             &lt 3 ESCAPE
             >;
         };
 
