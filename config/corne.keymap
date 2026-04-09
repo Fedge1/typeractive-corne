@@ -125,9 +125,9 @@
 
             display-name = "extra";
             bindings = <
-&none  &longPress LEFT_BRACE LEFT_BRACKET  &longPress RIGHT_BRACE RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &longPress TILDE GRAVE    &kp EQUAL                        &longPress AMPERSAND N7     &longPress ASTERISK N8       &longPress LEFT_PARENTHESIS N9  &Calc                             &none
-&none  &kp LESS_THAN                       &kp GREATER_THAN                      &kp TAB               &kp BACKSPACE          &caps_word                &kp PLUS                         &longPress DOLLAR NUMBER_4  &longPress PERCENT N5        &longPress CARET NUMBER_6       &longPress PIPE NON_US_BACKSLASH  &none
-&none  &SwBuf                              &kp LC(LG(LEFT))                      &kp LC(LG(RIGHT))     &kp MINUS              &kp ESCAPE                &kp SLASH                        &longPress EXCLAMATION N1   &longPress AT_SIGN NUMBER_2  &longPress HASH NUMBER_3        &longPress COMMA PERIOD           &none
+&none  &longPress LEFT_BRACE LEFT_BRACKET  &longPress RIGHT_BRACE RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &longPress TILDE GRAVE    &kp EQUAL                        &longPress AMPERSAND N7     &longPress ASTERISK N8       &longPress LEFT_PARENTHESIS N9  &Calc                      &none
+&none  &kp LESS_THAN                       &kp GREATER_THAN                      &kp TAB               &kp BACKSPACE          &caps_word                &kp PLUS                         &longPress DOLLAR NUMBER_4  &longPress PERCENT N5        &longPress CARET NUMBER_6       &longPress PIPE BACKSLASH  &none
+&none  &SwBuf                              &kp LC(LG(LEFT))                      &kp LC(LG(RIGHT))     &kp MINUS              &kp ESCAPE                &kp SLASH                        &longPress EXCLAMATION N1   &longPress AT_SIGN NUMBER_2  &longPress HASH NUMBER_3        &longPress COMMA PERIOD    &none
                                                                                  &kp LGUI              &trans                 &trans                    &longPress RIGHT_PARENTHESIS N0  &kp SPACE                   &kp RALT
             >;
         };
