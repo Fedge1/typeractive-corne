@@ -79,6 +79,13 @@
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 37>;
         };
+
+        DTapeReturn: DTapeReturn {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAPERETURN";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp RET>;
+        };
     };
 
     macros {
@@ -119,7 +126,7 @@
             display-name = "Racket";
             bindings = <
 &none  &kp F            &kp D              &kp L             &DTapQuestion  &kp J      &longPress SEMICOLON COLON  &kp B           &kp U                         &kp O               &kp SLASH             &none
-&none  &hrL LEFT_ALT S  &hrL LEFT_SHIFT T  &hrL LCTRL H      &kp C          &kp Y      &kp Q                       &kp N           &hrR RCTRL A                  &hrR RIGHT_SHIFT E  &hrR LEFT_ALT I       &none
+&none  &hrL LEFT_ALT S  &hrL LEFT_SHIFT T  &hrL LCTRL H      &kp C          &kp Y      &DTapeReturn                &kp N           &hrR RCTRL A                  &hrR RIGHT_SHIFT E  &hrR LEFT_ALT I       &none
 &none  &hrL LEFT_GUI X  &kp K              &kp M             &kp G          &kp V      &kp Z                       &kp P           &longPress DOUBLE_QUOTES SQT  &kp COMMA           &hrR LEFT_GUI PERIOD  &none
                                            &kp LEFT_CONTROL  &lt 1 RET      &lt 1 R    &kp SPACE                   &sk LEFT_SHIFT  &lt 2 RIGHT_ALT
             >;
