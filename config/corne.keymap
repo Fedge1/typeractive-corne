@@ -120,16 +120,6 @@
             bindings = <&kp RET>;
             key-positions = <31 32>;
         };
-
-        shiftL {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <14 15>;
-        };
-
-        shiftR {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <21 20>;
-        };
     };
 
     keymap {
@@ -144,10 +134,10 @@
 
             display-name = "Racket";
             bindings = <
-&none  &kp F            &kp D                   &kp L             &DTapQuestion  &kp J      &longPress SEMICOLON COLON  &kp B      &kp U                         &kp O                    &kp SLASH             &none
-&none  &hrL LEFT_ALT S  &hrShiftL LEFT_SHIFT T  &hrL LCTRL H      &kp C          &kp Y      &DTapeReturn                &kp N      &hrR RCTRL A                  &hrShiftR RIGHT_SHIFT E  &hrR LEFT_ALT I       &none
-&none  &hrL LEFT_GUI X  &kp K                   &kp M             &kp G          &kp V      &kp Z                       &kp P      &longPress DOUBLE_QUOTES SQT  &kp COMMA                &hrR LEFT_GUI PERIOD  &none
-                                                &kp LEFT_CONTROL  &lt 1 RET      &lt 1 R    &kp SPACE                   &lt 2 RET  &kp RIGHT_ALT
+&none  &kp F            &kp D                   &kp L             &DTapQuestion   &kp J      &longPress SEMICOLON COLON  &kp B      &kp U                         &kp O                    &kp SLASH             &none
+&none  &hrL LEFT_ALT S  &hrShiftL LEFT_SHIFT T  &hrL LCTRL H      &kp C           &kp Y      &DTapeReturn                &kp N      &hrR RCTRL A                  &hrShiftR RIGHT_SHIFT E  &hrR LEFT_ALT I       &none
+&none  &hrL LEFT_GUI X  &kp K                   &kp M             &kp G           &kp V      &kp Z                       &kp P      &longPress DOUBLE_QUOTES SQT  &kp COMMA                &hrR LEFT_GUI PERIOD  &none
+                                                &kp LEFT_CONTROL  &sk LEFT_SHIFT  &lt 1 R    &kp SPACE                   &lt 2 RET  &kp RIGHT_ALT
             >;
         };
 
