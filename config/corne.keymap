@@ -90,6 +90,13 @@
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 37>;
         };
+
+        DtapeNumShift: DtapeNumShift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAPENUMSHIFT";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&sl 3>;
+        };
     };
 
     macros {
@@ -119,6 +126,11 @@
         comboReturn2 {
             bindings = <&kp RET>;
             key-positions = <31 32>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <28 27>;
         };
     };
 
@@ -175,10 +187,10 @@
 
         Function {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans   &trans    &trans  &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans                 &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans                 &kp DOLLAR       &kp PERCENT   &kp CARET             &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans                 &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans  &trans
+                         &trans   &trans   &trans    &kp RIGHT_PARENTHESIS  &trans           &trans
             >;
         };
     };
