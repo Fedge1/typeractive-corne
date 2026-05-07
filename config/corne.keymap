@@ -97,6 +97,12 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&sl 3>;
         };
+
+        DtapAltZero: DtapAltZero {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp LA(N0)>;
+        };
     };
 
     macros {
@@ -146,7 +152,7 @@
 
             display-name = "Racket";
             bindings = <
-&none  &kp F            &kp D            &kp L             &DTapQuestion   &kp J      &longPress SEMICOLON COLON  &kp B           &kp U                         &kp O            &kp SLASH             &none
+&none  &kp F            &kp D            &kp L             &DTapQuestion   &kp J      &longPress SEMICOLON COLON  &kp B           &kp U                         &kp O            &DtapAltZero          &none
 &none  &kp S            &hrL LEFT_ALT T  &hrL LCTRL H      &kp C           &kp Y      &DTapeReturn                &kp N           &hrR RCTRL A                  &hrR LEFT_ALT E  &kp I                 &none
 &none  &hrL LEFT_GUI X  &kp K            &kp M             &kp G           &kp V      &kp Z                       &kp P           &longPress DOUBLE_QUOTES SQT  &kp COMMA        &hrR LEFT_GUI PERIOD  &none
                                          &kp LEFT_CONTROL  &DtapeNumShift  &lt 1 R    &kp SPACE                   &DtapeNumShift  &lt 2 ENTER
@@ -181,7 +187,7 @@
 &trans  &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 2    &bt BT_PRV       &bt BT_NXT    &trans  &kp PAGE_DOWN      &kp UP_ARROW     &kp PG_UP   &none   &trans
 &trans  &trans      &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans        &trans  &kp LEFT           &kp DOWN         &kp RIGHT   &none   &trans
 &trans  &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans  &trans
-                                    &kp LGUI        &trans           &trans        &trans  &lt 3 TILDE        &lt 3 ESCAPE
+                                    &kp LGUI        &mkp MB1         &mkp MB2      &trans  &lt 3 TILDE        &lt 3 ESCAPE
             >;
         };
 
