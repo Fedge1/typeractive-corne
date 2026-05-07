@@ -166,7 +166,7 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "extra";
+            display-name = "Numbers";
             bindings = <
 &none  &longPress LEFT_BRACE LEFT_BRACKET  &longPress RIGHT_BRACE RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &longPress TILDE GRAVE    &kp EQUAL                        &longPress AMPERSAND N7     &longPress ASTERISK N8       &longPress LEFT_PARENTHESIS N9  &Calc                      &none
 &none  &kp LESS_THAN                       &kp GREATER_THAN                      &kp TAB               &kp BACKSPACE          &caps_word                &kp PLUS                         &longPress DOLLAR NUMBER_4  &longPress PERCENT N5        &longPress CARET NUMBER_6       &longPress PIPE BACKSLASH  &none
@@ -182,7 +182,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Fkeys";
+            display-name = "Navigation";
             bindings = <
 &trans  &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 2    &bt BT_PRV       &bt BT_NXT    &trans  &kp PAGE_DOWN      &kp UP_ARROW     &kp PG_UP   &none   &trans
 &trans  &trans      &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans        &trans  &kp LEFT           &kp DOWN         &kp RIGHT   &none   &trans
