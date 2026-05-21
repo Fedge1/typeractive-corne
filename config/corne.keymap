@@ -138,6 +138,21 @@
             bindings = <&kp MINUS>;
             key-positions = <28 27>;
         };
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <4 3>;
+        };
+
+        DoubleQuote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <32 33>;
+        };
+
+        SemiColon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <7 8>;
+        };
     };
 
     keymap {
