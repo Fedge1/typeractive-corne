@@ -149,9 +149,14 @@
             key-positions = <32 33>;
         };
 
+        SemiColon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <6 11>;
+        };
+
         Semi {
             bindings = <&kp SEMICOLON>;
-            key-positions = <7 6>;
+            key-positions = <18 7>;
         };
     };
 
